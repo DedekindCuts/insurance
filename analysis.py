@@ -2,6 +2,7 @@ import json
 import pylab
 import numpy
 import matplotlib
+matplotlib.use("AGG")
 
 with open('rates.json') as json_data:
     ratedata = json.load(json_data)
@@ -63,7 +64,7 @@ for option in ratedata:
     ax.spines['bottom'].set_visible(False)
     ax.spines['left'].set_visible(False)
 
-    pylab.savefig("{}.jpg".format(option),dpi=300)
+    pylab.savefig("{}.png".format(option),dpi=300)
     pylab.close()
 
 colors= ['Blue','Orange','Green','Red']
