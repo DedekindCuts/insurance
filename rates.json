@@ -1,26 +1,30 @@
 {
-    "Option 9": {
+    "Current (SelectHealth option 9)": {
         "Deductible": 3400,
         "Out-of-pocket max": 13500,
         "Co-insurance": 0.30,
-        "Premium": 701
+        "Premium": 910, 
+        "Veracity": 1
     },
-    "Option 10": {
-        "Deductible": 5000,
-        "Out-of-pocket max": 13500,
-        "Co-insurance": 0.20,
-        "Premium": 646
+    "SPA 250": {
+        "Deductible": 500,
+        "Out-of-pocket max": 5000,
+        "Co-insurance": 0.10,
+        "Premium": 624, 
+        "Veracity": 0
     },
-    "Option 11": {
-        "Deductible": 8000,
-        "Out-of-pocket max": 8000,
-        "Co-insurance": 0.00,
-        "Premium": 659
+    "SPA 500": {
+        "Deductible": 1000,
+        "Out-of-pocket max": 6000,
+        "Co-insurance": 0.10,
+        "Premium": 584, 
+        "Veracity": 0
     },
-    "Option 12": {
-        "Deductible": 11500,
-        "Out-of-pocket max": 13500,
-        "Co-insurance": 0.30,
-        "Premium": 529
+    "SPA 1500": {
+        "Deductible": 3000,
+        "Out-of-pocket max": 6000,
+        "Co-insurance": 0.10,
+        "Premium": 439, 
+        "Veracity": 0
     }
 }
