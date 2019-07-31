@@ -4,27 +4,55 @@
         "Out-of-pocket max": 13500,
         "Co-insurance": 0.30,
         "Premium": 910, 
-        "Veracity": 1
-    },
-    "SPA 250": {
-        "Deductible": 500,
-        "Out-of-pocket max": 5000,
-        "Co-insurance": 0.10,
-        "Premium": 624, 
-        "Veracity": 0
+        "Veracity": 1, 
+        "SPA": 0
     },
     "SPA 500": {
         "Deductible": 1000,
         "Out-of-pocket max": 6000,
         "Co-insurance": 0.10,
         "Premium": 584, 
-        "Veracity": 0
+        "Veracity": 0, 
+        "SPA": 1
     },
     "SPA 1500": {
         "Deductible": 3000,
         "Out-of-pocket max": 6000,
         "Co-insurance": 0.10,
         "Premium": 439, 
-        "Veracity": 0
+        "Veracity": 0, 
+        "SPA": 1
+    }, 
+    "HealthSave Share": {
+        "Deductible": 3000,
+        "Out-of-pocket max": 6000,
+        "Co-insurance": 0.20,
+        "Premium": 107, 
+        "Veracity": 0, 
+        "SPA": 0
+    }, 
+    "HealthSave Plus": {
+        "Deductible": 3000,
+        "Out-of-pocket max": 6000,
+        "Co-insurance": 0.20,
+        "Premium": 120, 
+        "Veracity": 0, 
+        "SPA": 0
+    }, 
+    "Select Med Plus": {
+        "Deductible": 2250,
+        "Out-of-pocket max": 6000,
+        "Co-insurance": 0.20,
+        "Premium": 345, 
+        "Veracity": 0, 
+        "SPA": 0
+    }, 
+    "Select Care Plus": {
+        "Deductible": 2250,
+        "Out-of-pocket max": 6000,
+        "Co-insurance": 0.20,
+        "Premium": 398, 
+        "Veracity": 0, 
+        "SPA": 0
     }
 }

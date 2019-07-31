@@ -19,6 +19,7 @@ data looks like this:
 """
 
 veracitycontribution = 750
+spa_rebate = 100
 mygraycolor = ( 0.95, 0.95, 0.95 )
 minor_locator = matplotlib.ticker.AutoMinorLocator(5)
 
@@ -27,8 +28,10 @@ services = numpy.array(range(1,60000))
 for option in ratedata:
     if ratedata[option]['Veracity'] == 1:
         prem = (ratedata[option]['Premium']-veracitycontribution)*12
+    elif ratedata[option]['SPA'] == 0:
+        prem = (ratedata[option]['Premium']-spa_rebate)*12
     else:
-        prem = (ratedata[option]['Premium']) * 12
+        prem = (ratedata[option]['Premium'])*12
     
     if prem < 0:
         prem = 0
@@ -72,7 +75,7 @@ for option in ratedata:
     pylab.savefig("{}.png".format(option),dpi=300)
     pylab.close()
 
-colors= ['Blue','Orange','Green','Red']
+colors= ['Blue','Orange','Green','Red', 'Purple', 'Black', 'Teal']
 pylab.figure(figsize=(10,6))
 i=0
 for option in totals:
