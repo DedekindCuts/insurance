@@ -72,7 +72,7 @@ for option in ratedata:
     ax.spines['bottom'].set_visible(False)
     ax.spines['left'].set_visible(False)
 
-    pylab.savefig("{}.png".format(option),dpi=300)
+    pylab.savefig("plots/{}.png".format(option),dpi=300)
     pylab.close()
 
 colors= ['Blue','Orange','Green','Red', 'Purple', 'Black', 'Teal']
@@ -95,5 +95,5 @@ pylab.xlabel("Services received")
 pylab.ylabel("Total paid (less Veracity contribution)")
 pylab.legend(loc='upper left')
 pylab.ylim([0,30000])
-pylab.savefig('totals.png',dpi=300)
+pylab.savefig('plots/totals.png',dpi=300)
 pylab.close()
