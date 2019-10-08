@@ -23,35 +23,11 @@
         "Veracity": 0, 
         "SPA": 1
     }, 
-    "HealthSave Share": {
-        "Deductible": 3000,
-        "Out-of-pocket max": 6000,
-        "Co-insurance": 0.20,
-        "Premium": 107, 
-        "Veracity": 0, 
-        "SPA": 0
-    }, 
-    "HealthSave Plus": {
+    "Intermountain": {
         "Deductible": 3000,
         "Out-of-pocket max": 6000,
         "Co-insurance": 0.20,
         "Premium": 120, 
-        "Veracity": 0, 
-        "SPA": 0
-    }, 
-    "Select Med Plus": {
-        "Deductible": 2250,
-        "Out-of-pocket max": 6000,
-        "Co-insurance": 0.20,
-        "Premium": 345, 
-        "Veracity": 0, 
-        "SPA": 0
-    }, 
-    "Select Care Plus": {
-        "Deductible": 2250,
-        "Out-of-pocket max": 6000,
-        "Co-insurance": 0.20,
-        "Premium": 398, 
         "Veracity": 0, 
         "SPA": 0
     }
