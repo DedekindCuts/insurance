@@ -1,34 +1,20 @@
 {
-    "Current (SelectHealth option 9)": {
-        "Deductible": 3400,
-        "Out-of-pocket max": 13500,
-        "Co-insurance": 0.30,
-        "Premium": 910, 
-        "Veracity": 1, 
-        "SPA": 0
+    "A": {
+        "Deductible": 500,
+        "Out-of-pocket max": 5000,
+        "Co-insurance": 0.10,
+        "Premium": 624
     },
-    "SPA 500": {
+    "B": {
         "Deductible": 1000,
         "Out-of-pocket max": 6000,
         "Co-insurance": 0.10,
-        "Premium": 584, 
-        "Veracity": 0, 
-        "SPA": 1
+        "Premium": 584
     },
-    "SPA 1500": {
+    "C": {
         "Deductible": 3000,
         "Out-of-pocket max": 6000,
         "Co-insurance": 0.10,
-        "Premium": 439, 
-        "Veracity": 0, 
-        "SPA": 1
-    }, 
-    "Intermountain": {
-        "Deductible": 3000,
-        "Out-of-pocket max": 6000,
-        "Co-insurance": 0.20,
-        "Premium": 120, 
-        "Veracity": 0, 
-        "SPA": 0
+        "Premium": 439
     }
 }

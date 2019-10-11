@@ -14,27 +14,17 @@ data looks like this:
         "Deductible": 3000,
         "Out-of-pocket max": 13300,
         "Co-insurance": 0.30,
-        "Premium": 1250, 
-        "Veracity": 1
+        "Premium": 1250
 """
 
-veracitycontribution = 750
-spa_rebate = 100
 mygraycolor = ( 0.95, 0.95, 0.95 )
 minor_locator = matplotlib.ticker.AutoMinorLocator(5)
 
 totals = {}
 services = numpy.array(range(1,60000))
 for option in ratedata:
-    if ratedata[option]['Veracity'] == 1:
-        prem = (ratedata[option]['Premium']-veracitycontribution)*12
-    elif ratedata[option]['SPA'] == 0:
-        prem = (ratedata[option]['Premium']-spa_rebate)*12
-    else:
-        prem = (ratedata[option]['Premium'])*12
+    prem = (ratedata[option]['Premium'])*12
     
-    if prem < 0:
-        prem = 0
     coins = ratedata[option]['Co-insurance']
     oom = ratedata[option]['Out-of-pocket max']
     ded = ratedata[option]['Deductible']
