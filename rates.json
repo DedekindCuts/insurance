@@ -3,18 +3,24 @@
         "Deductible": 500,
         "Out-of-pocket max": 5000,
         "Co-insurance": 0.10,
-        "Premium": 624
+        "Premium": 600
     },
     "B": {
-        "Deductible": 1000,
-        "Out-of-pocket max": 6000,
-        "Co-insurance": 0.10,
-        "Premium": 584
+        "Deductible": 1500,
+        "Out-of-pocket max": 7500,
+        "Co-insurance": 0.15,
+        "Premium": 400
     },
     "C": {
-        "Deductible": 3000,
-        "Out-of-pocket max": 6000,
-        "Co-insurance": 0.10,
-        "Premium": 439
+        "Deductible": 2000,
+        "Out-of-pocket max": 10000,
+        "Co-insurance": 0.20,
+        "Premium": 300
+    }, 
+    "D": {
+        "Deductible": 3000, 
+        "Out-of-pocket max": 12500, 
+        "Co-insurance": 0.30, 
+        "Premium": 200
     }
 }
