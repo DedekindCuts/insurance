@@ -34,7 +34,8 @@ def PlanPlot(plan_data, plan_name, svc_limit = None, oop_limit = None):
     coinsamt = np.minimum(np.maximum(services - ded, 0)*coins, oom - ded)
 
     # create the plot 
-    plt.figure(figsize=(10,6))
+    fig = plt.figure(figsize = (10, 6))
+    ax = fig.subplots()
 
     # plot the amount spent in each category and calculate the total OOP cost 
     # for each level of services
@@ -58,7 +59,6 @@ def PlanPlot(plan_data, plan_name, svc_limit = None, oop_limit = None):
     plt.ylabel("Total out of pocket cost")
     plt.legend(loc = 'upper left')
     plt.grid(which = 'both', color = 'White', linestyle = '-')
-    ax = plt.subplot(111)
     ax.set_axisbelow(True)
     ax.set_facecolor(mygraycolor)
     ax.xaxis.set_minor_locator(minor_locator)
@@ -97,7 +97,8 @@ def ComparisonPlot(costs, svc_limit = None, oop_limit = None, clrs = None):
     services = np.array(range(0, svc_limit))
 
     # create the plot
-    plt.figure(figsize = (10,6))
+    fig = plt.figure(figsize = (10, 6))
+    ax = fig.subplots()
     for option in costs:
         plt.plot(services, costs[option], alpha = 0.5, label = option)
 
@@ -105,7 +106,6 @@ def ComparisonPlot(costs, svc_limit = None, oop_limit = None, clrs = None):
     mygraycolor = (0.95, 0.95, 0.95)
     minor_locator = mpl.ticker.AutoMinorLocator(5)
     plt.grid(which = 'both', color = 'White',linestyle = '-')
-    ax = plt.subplot(111)
     ax.set_prop_cycle(color = [clrs(i/len(costs)) for i in range(len(costs))])
     ax.set_axisbelow(True)
     ax.set_facecolor(mygraycolor)
