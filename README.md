@@ -16,5 +16,5 @@ A tool for comparing health insurance plans
 
 The following output is currently produced by *analysis.py*:
 
-* */<plan name/>.png*: Shows the total out-of-pocket cost for every level of services received under plan \<plan name\>, and shows how much of this cost is spent towards premiums, deductible, and co-insurance.
+* *\<plan name\>.png*: Shows the total out-of-pocket cost for every level of services received under plan \<plan name\>, and shows how much of this cost is spent towards premiums, deductible, and co-insurance.
 * *totals.png*: Shows the total out-of-pocket cost for every level of services under every plan specified in *rates.json*.
